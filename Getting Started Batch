@@ -1,0 +1,23 @@
+ÿþ&cls
+@echo off
+Title //Title
+%1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit
+cd /d "%~dp0"
+
+:Main
+color 2
+echo.!REMOVE ALL ECHOS BELOW AND ADD OWN CODE!
+echo.//CODE UP TOP = REQUEST ADMIN PERMS AND TO ENABLE CALLS
+echo.//REMOVE THIS... ECHO OFF = OEPNS IN CMD ECHO ON = SILENT BUT OPENS 
+echo.//ECHO = PRINT AND ECHO. = PRINT WITH SPACEBARS
+echo.//WE WANT TO SPECIFY A TAB WE ARE IN TO MAKE A MULTI TOOL SUCH AS :MAIN SO IF WE WERE TO CALL MAIJN TO MAKE A LOOP 
+echo.//IT GOES BACK AFTER A CODE HAS RAN"
+echo.//EXAMPLE (WELCOME TO GITHUB BOZO) LOOK AT THE SPACES AT THE START USING ECHO. WITH ECHO YOU CANT DO THAT"
+
+echo. //CODE BELOW
+
+echo Hey! Welcome To Github Bozo
+echo.   Hey! Welcome To Github Bozo
+pause
+exit
+
